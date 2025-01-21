@@ -185,17 +185,6 @@ def Models(train_path, val_path):
     model.fit_generator(train_ds, validation_data=val_ds, epochs=30)
     model.save("botle.h5")
 
-    # fig1 = plt.gcf()
-    # plt.plot(history.history['accuracy'])
-    # plt.axis(ymin=0.4,ymax=1)
-    # plt.grid()
-    # plt.title('Model Accuracy')
-    # plt.ylabel('Accuracy')
-    # plt.xlabel('Epochs')
-    # plt.legend(['train'])
-    # plt.show()
-
-
 
 datasets = 'temp/'
 data = os.listdir(datasets)
